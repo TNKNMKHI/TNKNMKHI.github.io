@@ -3,10 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>test</title>
+    <title>自己紹介</title>
+    <meta name="description" content="自己紹介ページ">
+    <link rel="icon" type="image/png" sizes="16x16"  href="/favicon-16x16.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    Success! The server is running.
-    Self introduction is here.
+    <header>
+        <h1>自己紹介</h1>
+        <nav>
+            <ul>
+                <li><a href="#name">名前</a></li>
+                <li><a href="#number">学籍番号</a></li>
+                <li><a href="#from">出身地域</a></li>
+                <li><a href="#regional">地域連携で取り組んだ内容</a></li>
+                <li><a href="#VitaLink">VitaLinkプロジェクトでやりたいこと・できるようになりたいこと</a></li>
+                <li><a href="#question">質問</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="name">
+        <h4>名前</h4>
+        <ruby>
+            田<rt>た</rt>中<rt>なか</rt>絢<rt>けん</rt>太<rt>た</rt>朗<rt>ろう</rt>
+        </ruby>
+    </div>
+    <div id="number">
+        <h4>学籍番号</h4>
+        <p>T123085</p>
+    </div>
+    <div id="from">
+        <h4>出身地域</h4>
+        <p>愛知県</p>
+    </div>
+    <div id="regional">
+        <h4>地域連携で取り組んだ内容</h4>
+        <h5></h5>
+        <p>
+            「<a href=https://www.city.chino.lg.jp/site/new-kotsu/>のらざあ</a>」という地域公共交通の要となっているシステムに注目し、このシステムの現状を記した資料を拝見したり、茅野市役所を訪問し職員の方から詳しい話を伺うことによって分析を行った。 
+        </p>  
+        <p>
+            その結果利用者の大半が高齢者であることや、彼らの行先に病院が多いこと、電話予約の割合が多いがそれが抱
+            える問題故に予約不成立が多くなっていることから、のらざあは利用者に合わせた設計が足りていないという
+            課題を抱えてると考えました。 
+        </p>
+    </div>
+    <div id="VitaLink">
+        <h4>VitaLinkプロジェクトでやりたいこと・できるようになりたいこと</h4>
+        <p>
+             こちらのプロジェクトを通して私はチームでの開発経験を積み、実践的なスキルを身に付けたいと考えています。周りの方々とのコミュニケーションを意識しながら開発を続けられたら良いなと思っています。
+        </p>      
+    </div>
+    <div id="question">
+        <h4>質問</h4>
+        <form action="POST">
+            <label for="question">質問内容</label><br>
+            <input type="text" id="name" name="name" placeholder="名前"><br>
+            <textarea id="question" name="question" rows="4" cols="50" placeholder="質問内容"></textarea>
+            <br>
+            <input type="submit" value="送信">
+        </form>
+    </div>
+    <footer>
+        <p>© 2025 田中絢太朗</p>
+    </footer>
+    
 </body>
 </html>
